@@ -10,10 +10,6 @@ input.onchange = e => {
     address = e.target.value
 }
 
-
-
-
-
 const getWeather = (e) => {
     e.preventDefault()
     console.log(address)
@@ -23,7 +19,7 @@ const getWeather = (e) => {
         lat.innerHTML = '...'
         long.innerHTML = '...'
 
-        fetch(`http://localhost:3000/weather?address=${address}`).then((response) => {
+        fetch(`/weather?address=${address}`).then((response) => {
             response.json().then(data => {
                 if (data.error){
                     document.getElementById('errorMsg').innerHTML = data.error
