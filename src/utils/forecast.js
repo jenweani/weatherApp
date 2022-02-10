@@ -10,7 +10,7 @@ const forecast = (latitude, longitude, callback) => {
         }
         else{
             let body = response.body.current
-            let output = `It is currently ${body.temperature} degrees out in ${response.body.location.name}. There is a ${body.precip}% chance of ${body.weather_descriptions[0]}`
+            let output = `It's ${body.weather_descriptions[0]} in ${response.body.location.name}, with temp at about ${body.temperature} degress.  @ [ ${body.observation_time} ]`
             callback(undefined, output)
         } 
     })
