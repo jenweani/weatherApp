@@ -1,0 +1,94 @@
+body{
+    margin: 0 auto;
+    max-width: 650px;
+    padding: 0 10px;
+    height: 100vh;
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #3333338b;
+}
+
+header nav {
+    margin: auto 0;
+}
+
+header nav a {
+    padding: 8px;
+    color:#555555;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px #3333338b;
+}
+
+footer {
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    width: 650px;
+    border-top: 1px solid #3333338b;
+    display: flex;
+}
+ footer p {
+     margin: auto 0;
+ }
+
+ #anm {
+     width: 30px;
+     height: 30px;
+     background: radial-gradient(closest-corner at 8px 10px,  rgba(255, 255, 255, 0.619) 30%, black 100%);
+     
+     border-radius: 20px 50px 20px 50px;
+     /*box-shadow: -6px -12px 2px rgb(51, 51, 51), 6px 9px 2px #555555a7;
+     */
+     animation: rotateAnm 3s ease-in-out infinite;
+ }
+
+ @keyframes rotateAnm {
+     50% { transform: rotate(90deg)}
+ }
+
+ .error{
+     display: flex;
+     margin-top: 40%;
+ }
+
+ .errorMessage {
+     margin: auto;
+ }
+
+ #errorMsg {
+     visibility: hidden;
+ }
+
+ #form{
+     margin: 20px 0;
+ }
+
+ #submit {
+     cursor: pointer;
+     color: blue;
+     background-color: aliceblue;
+     border: 1px solid #cccccc;
+     padding: 8px;
+ }
+
+ p, span {
+     font-size: 14px;
+ }
+
+ #input {
+     border: 1px solid #cccccc;
+     padding: 8px;
+
+ }

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather</title>
+        <link rel="shortcut icon" href="/img/weather.png" type="image/x-icon">
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        {{>header}}
+        <p id="tx">Home page</p>
+        <div id="anm"></div>
+        <form id="form" >
+            <input id="input" type="text" placeholder="Enter weather location" >
+            <input id="submit" type="submit" value="Search">
+        </form>
+        <p id="errorMsg">Input an address you bitch</p>
+        <div class="forecastInfo">
+            <p>Location: <span id="location"></span></p>
+            <p>Forecast: <span id="info"></span></p>
+            <p>Coordinates: <span id="lat"></span> <span id="long"></span></p>
+        </div>
+        {{>footer}}
+        <script type="text/javascript" src="/index.js"></script>
+    </body>
+</html>
